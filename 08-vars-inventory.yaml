@@ -1,6 +1,5 @@
-- name: variables
-  hosts: localhost
-    
+- name: variables from inventoryles
+  hosts: localhost  
   tasks:
     - name: print the information
       vars:
