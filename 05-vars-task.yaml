@@ -10,7 +10,7 @@
         course: "Terraform"
         trainer: "Ram"
         Mode: "Direct"
-        ansible.builtin.debug:
+      ansible.builtin.debug:
         msg: "I am learning {{course}} from {{trainer}} through {{Mode}}"
     - name: print the information
       ansible.builtin.debug:
