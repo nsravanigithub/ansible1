@@ -1,0 +1,6 @@
+- name: variables
+  hosts: localhost
+  tasks:
+    - name: print the information
+      ansible.builtin.debug:
+        msg: "I am learning {{course}} from {{trainer}} through {{Mode}}"
