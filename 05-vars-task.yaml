@@ -5,12 +5,12 @@
     trainer: "Sivakumar"
     Mode: "Online"
   tasks: #declaring variables task level
-    vars:
-      course: "Terraform"
-      trainer: "Ram"
-      Mode: "Direct"
     - name: print the information
-      ansible.builtin.debug:
+      vars:
+        course: "Terraform"
+        trainer: "Ram"
+        Mode: "Direct"
+        ansible.builtin.debug:
         msg: "I am learning {{course}} from {{trainer}} through {{Mode}}"
     - name: print the information
       ansible.builtin.debug:
