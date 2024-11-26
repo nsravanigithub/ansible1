@@ -1,0 +1,9 @@
+- name: variables
+  hosts: localhost
+    
+  tasks:
+    - name: print the information
+      vars:
+        timings: "10:30 IST"    
+      ansible.builtin.debug:
+        msg: "I am learning {{course}} from {{trainer}} through {{Mode}} timings are {{timings}}"
